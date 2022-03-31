@@ -14,14 +14,14 @@ Each line contains a timestamp and a query separated by a tab.
 
 Build a small application exposing the following endpoint through a REST API (tip: we use [FastAPI](https://github.com/tiangolo/fastapi) framework):
 
- * `GET /1/queries/count/<DATE_PREFIX>`: returns a JSON object specifying the number of distinct queries that have been done during a specific time range
+ * `GET /queries/count/<DATE_PREFIX>`: returns a JSON object specifying the number of distinct queries that have been done during a specific time range
 
 #### Sample expected results
 
- * Distinct queries done in 2015: `GET /1/queries/count/2015`: `{"count": 573697}`
- * Distinct queries done in Aug: `GET /1/queries/count/2015-08`: `{"count": 573697}`
- * Distinct queries done on Aug 3rd: `GET /1/queries/count/2015-08-03`: `{"count": 198117}`
- * Distinct queries done on Aug 1st between 00:04:00 and 00:04:59: `GET /1/queries/count/2015-08-01 00:04`: `{"count": 617}`
+ * Distinct queries done in 2015: `GET /queries/count/2015`: `{"count": 573697}`
+ * Distinct queries done in Aug: `GET /queries/count/2015-08`: `{"count": 573697}`
+ * Distinct queries done on Aug 3rd: `GET /queries/count/2015-08-03`: `{"count": 198117}`
+ * Distinct queries done on Aug 1st between 00:04:00 and 00:04:59: `GET /queries/count/2015-08-01 00:04`: `{"count": 617}`
 
 #### Guidelines
 
