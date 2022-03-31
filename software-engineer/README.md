@@ -16,7 +16,7 @@ Build a small application exposing the following endpoint through a REST API (ti
 
  * `GET /1/queries/count/<DATE_PREFIX>`: returns a JSON object specifying the number of distinct queries that have been done during a specific time range
 
-#### Examples
+#### Sample expected results
 
  * Distinct queries done in 2015: `GET /1/queries/count/2015`: `{"count": 573697}`
  * Distinct queries done in Aug: `GET /1/queries/count/2015-08`: `{"count": 573697}`
